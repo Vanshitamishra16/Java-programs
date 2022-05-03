@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int temp = n;
+        int rev = 0;
+        int div;
+      while(n>0){
+          div=n%10;
+          rev = rev*10 + div;
+          n/=10;
+      }
+      if(rev == temp){
+        System.out.println("The reversed num is "+rev+" which is a pallindrome number");
+  }
+  else{
+             System.out.println("The reversed num is "+rev+" which is not a pallindrome number");
+ 
+  }
+    }
+}
